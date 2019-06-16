@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Todo list app</title>
+
+    <!-- Roboto font link -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./style2.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+
+    <header>
+        <input type="text" placeholder="Enter an activity.." id="item">
+        <button id="add" style="color:skyblue ">
+            ADD TASK
+        </button>
+    </header>
+
+    <div class="container">
+        <h3 >To-do list:</h3>
+    </div>
+
+    <div class="container">
+        <!-- Nezavrseni zadaci -->
+        <ul class="todo" id="todo"></ul>
+
+        <!-- Zavrseni zadaci -->
+        <ul class="todo" id="completed"></ul>
+    </div>
+
+    <div style="text-align: center">
+        <button id="clearall" style="color:rgb(41, 137, 228)" onclick="deletAll()">
+                Clear All
+        </button>
+    </div>
+
+    <!-- JS src -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
